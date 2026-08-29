@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário</title>
+  </head>
+  <body>
+    <!-- Formulário HTML 
+     label = funcionando como um rótulo ou etiqueta para campos de formulário
+
+     form = formulário, como input, label, textarea e botões
+
+     id = identificador único para cada elemento do formulário, usado para associar o label ao input correspondente.
+
+     placeholder = texto de ajuda dentro dos campos de formulário
+
+     <br /> em HTML serve para inserir uma quebra de linha simples no texto, equivalente a apertar "Enter" no teclado.
+
+     radio = tipo de input que permite selecionar apenas uma opção de um grupo de opções
+     checkbox = tipo de input que permite selecionar múltiplas opções de um grupo de opções
+
+     onsubmit = evento que é acionado quando o formulário é enviado ( cliente )
+
+     action = especifica onde os dados do formulário devem ser enviados ( servidor ) 
+
+     button = botão de envio do formulário, mais utilizado que o submit, pois permite mais personalização e controle sobre o comportamento do botão.
+
+     textarea = campo de texto multilinha, usado para permitir que o usuário insira uma quantidade maior de texto, comentários ou descrições.
+
+     placeholder = fornece uma dica ou instrução dentro do campo de entrada, indicando ao usuário o tipo de informação que deve ser inserida.
+
+     option = define uma opção dentro de um elemento select, permitindo que o usuário escolha entre várias opções disponíveis.
+
+     legend = fornece uma legenda ou título descritivo para um grupo de campos dentro de um formulário, geralmente usado em conjunto com o elemento fieldset.
+
+     fieldset = elemento que agrupa campos relacionados dentro de um formulário, usado para organizar visualmente os campos e fornecendo uma legenda descritiva.
+     -->
+    <h1>Formulário HTML</h1>
+
+    <!-- 
+label = funcionando como um rótulo ou etiqueta para campos de formulário
+
+Form = formulário, como input, label, textarea e botões
+
+id = identificador único para cada elemento do formulário, usado para associar o label ao input correspondente.
+
+Placeholder = texto de ajuda dentro dos campos de formulário
+
+<br /> em HTML serve para inserir uma quebra de linha simples no texto, equivalente a apertar= -->
+    <form>
+      <label for="nome">Nome:</label>
+      <input type="text" name="" id="nome" placeholder="Digite seu nome" />
+      <br />
+      <br />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" placeholder="exemplo@exemplo.com.br" />
+      <br />
+      <br />
+
+      <label for="senha">Senha:</label>
+      <input
+        type="password"
+        id="senha"
+        name=""
+        placeholder="Digite sua senha"
+      />
+      <br />
+      <br />
+
+      <label for="genero">Gênero:</label>
+      <input type="radio" name="genero" id="masculino" value="masculino" />
+      <label for="masculino">Masculino</label>
+
+      <input type="radio" name="genero" id="feminino" value="feminino" />
+      <label for="feminino">Feminino</label>
+
+      <input type="radio" name="genero" id="outros" value="outros" />
+      <label for="outros">Outros</label>
+
+      <br />
+      <br />
+
+      <span>Estilo Musical</span>
+      <input
+        type="checkbox"
+        name="estilo"
+        id="estiloMusicalRock"
+        value="rock"
+      />
+      <label for="estiloMusicalRock">Rock</label>
+
+      <input type="checkbox" name="estilo" id="estiloMusicalPop" value="pop" />
+      <label for="estiloMusicalPop">Pop</label>
+
+      <input
+        type="checkbox"
+        name="estilo"
+        id="estiloMusicalEletronica"
+        value="eletronica"
+      />
+      <label for="estiloMusicalEletronica">Eletrônica</label>
+
+      <input
+        type="checkbox"
+        name="estilo"
+        id="estiloMusicalSertanejo"
+        value="sertanejo"
+      />
+      <label for="estiloMusicalSertanejo">Sertanejo</label>
+
+      <input
+        type="checkbox"
+        name="estilo"
+        id="estiloMusicalSamba"
+        value="samba"
+      />
+      <label for="estiloMusicalSamba">Samba</label>
+
+      <input
+        type="checkbox"
+        name="estilo"
+        id="estiloMusicalGospel"
+        value="gospel"
+      />
+      <label for="estiloMusicalGospel">Gospel</label>
+
+      <br />
+      <br />
+
+      <label for="descricaoId">Descrição:</label>
+      <textarea
+        id="descricaoId"
+        name="descricao"
+        placeholder="Digite uma descrição"
+      ></textarea>
+
+      <br />
+      <br />
+
+      <label for="opcoesId">Selecione um Estado</label>
+      <select name="opcoes" id="opcoesId">
+        <option value="">Selecione um Estado</option>
+
+        <option value="SP">São Paulo</option>
+        <option value="RJ">Rio de Janeiro</option>
+        <option value="MG">Minas Gerais</option>
+        <option value="RS">Rio Grande do Sul</option>
+        <option value="PR">Paraná</option>
+        <option value="SC">Santa Catarina</option>
+        <option value="BA">Bahia</option>
+        <option value="PE">Pernambuco</option>
+        <option value="CE">Ceará</option>
+        <option value="AM">Amazonas</option>
+        <option value="PA">Pará</option>
+        <option value="GO">Goiás</option>
+        <option value="DF">Distrito Federal</option>
+        <option value="ES">Espírito Santo</option>
+        <option value="MA">Maranhão</option>
+        <option value="PB">Paraíba</option>
+        <option value="RN">Rio Grande do Norte</option>
+        <option value="AL">Alagoas</option>
+        <option value="SE">Sergipe</option>
+        <option value="MT">Mato Grosso</option>
+        <option value="MS">Mato Grosso do Sul</option>
+        <option value="RO">Rondônia</option>
+        <option value="AC">Acre</option>
+        <option value="AP">Amapá</option>
+        <option value="RR">Roraima</option>
+        <option value="TO">Tocantins</option>
+        <option value="PI">Piauí</option>
+      </select>
+
+      <fieldset>
+        <legend>Dados Pessoais</legend>
+        <label for="nomeCompletoId">Nome Completo:</label>
+        <input
+          type="text"
+          name="nomeCompleto"
+          id="nomeCompletoId"
+          placeholder="Digite seu nome completo"
+        />
+        <label for="dataNascimentoId">Data de Nascimento:</label>
+        <input
+          type="date"
+          name="dataNascimento"
+          id="dataNascimentoId"
+          placeholder="Digite sua data de nascimento"
+        />
+        <br />
+      </fieldset>
+
+      <br />
+      <br />
+
+      <button type="submit">Enviar</button>
+    </form>
+  </body>
+</html>

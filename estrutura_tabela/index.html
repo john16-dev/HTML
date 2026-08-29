@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Página com Tabelas</title>
+  </head>
+  <body>
+    <h1>Página com Tabelas</h1>
+    <!-- Estrutura de uma tabela HTML 
+     Table = Tabela 
+     thead = table head (Cabeçalho da tabela)
+     tbody = table body (Corpo da tabela)
+     tfoot = table footer (Rodapé da tabela)
+     tr = table row (Linha da tabela)
+     td = table data (Célula da tabela)
+     th = table header (Cabeçalho da célula)
+     border = Borda da tabela 
+     style = Estilo da tabela 
+     text-align = Alinhamento do texto: center ( no centro)
+     colspan = Número de colunas que a célula deve abranger -(4 linhas ja que são 4 colunas na tabela)
+     rowspan = Número de linhas que a célula deve abranger |
+     -->
+
+    <table border="11">
+        <caption>Tabela de Vendas Mensais</caption>
+      <thead>
+        <tr>
+          <th>Mês</th>
+          <th>Produto</th>
+          <th>Preço</th>
+          <th>Quantidade</th>
+          <th>Total</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Janeiro</td>
+          <td>Produto 1</td>
+          <td>R$ 10,00</td>
+          <td style="text-align: center;">5</td>
+          <td>R$ 50,00</td>
+        </tr>
+        <tr>
+          <td>Fevereiro</td>
+          <td>Produto 2</td>
+          <td>R$ 15,00</td>
+          <td style="text-align: center;">10</td>
+          <td>R$ 150,00</td>
+        </tr>
+        <tr>
+          <td>Março</td>
+          <td>Produto 3</td>
+          <td>R$ 20,00</td>
+          <td style="text-align: center;">8</td>
+          <td>R$ 160,00</td>
+        </tr>
+        <tr> 
+          <td>Abril</td>
+          <td>Produto 4</td>
+          <td>R$ 25,00</td>
+          <td style="text-align: center;">12</td>
+          <td>R$ 300,00</td>
+        </tr>
+         <tr> 
+          <td>Maio</td>
+          <td>Produto 5</td>
+          <td>R$ 30,00</td>
+          <td style="text-align: center;">15</td>
+          <td>R$ 450,00</td>
+        </tr>
+         <tr> 
+          <td>Junho</td>
+          <td>Produto 6</td>
+          <td>R$ 35,00</td>
+          <td style="text-align: center;">18</td>
+          <td>R$ 630,00</td>
+        </tr>
+         <tr> 
+          <td>Julho</td>
+          <td>Produto 7</td>
+          <td>R$ 40,00</td>
+          <td style="text-align: center;">20</td>
+          <td>R$ 800,00</td>
+        </tr>
+         <tr> 
+          <td>Agosto</td>
+          <td>Produto 8</td>
+          <td>R$ 45,00</td>
+          <td style="text-align: center;">22</td>
+          <td>R$ 990,00</td>
+        </tr>
+         <tr> 
+          <td>Outubro</td>
+          <td>Produto 10</td>
+          <td>R$ 55,00</td>
+          <td style="text-align: center;">28</td>
+          <td>R$ 1.540,00</td>
+        </tr>
+         <tr> 
+          <td>Novembro</td>
+          <td>Produto 11</td>
+          <td>R$ 60,00</td>
+          <td style="text-align: center;">30</td>
+          <td>R$ 1.800,00</td>
+        </tr>
+          <tr> 
+          <td>Dezembro</td>
+          <td>Produto 12</td>
+          <td>R$ 65,00</td>
+          <td style="text-align: center;">35</td>
+          <td>R$ 2.275,00</td>
+        </tr>
+     </tbody>
+     <tfoot>
+       <tr>
+            <td colspan="4" style="text-align: center;">Total de Vendas</td>
+            <td>R$ 8.355,00</td>
+       </tr>
+     </tfoot>
+  </body>
+</html>
